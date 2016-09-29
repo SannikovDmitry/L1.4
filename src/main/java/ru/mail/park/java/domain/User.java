@@ -1,11 +1,15 @@
 package ru.mail.park.java.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
 	private final String name;
 	private long power;
 	private int wins;
 
-	public User(String name) {
+	@JsonCreator
+	public User(@JsonProperty("name") String name) {
 		this.name = name;
 	}
 
