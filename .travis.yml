@@ -6,7 +6,8 @@ before_install:
   - chmod +x mvnw
 deploy:
   provider: heroku
-  api_key: 5c203212-4463-49a7-8de6-bccde26f0efa
+  api_key:
+    secure: 5c203212-4463-49a7-8de6-bccde26f0efa
   app: backendagragegame
   on:
     repo: SannikovDmitry/L1.4
