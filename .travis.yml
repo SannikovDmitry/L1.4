@@ -8,6 +8,7 @@ deploy:
   provider: heroku
   api_key:
     secure: 61610821-2837-4d09-b056-f95828b0bde1
+  app: L1.4
 
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
