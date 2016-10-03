@@ -23,6 +23,11 @@ public class GameController {
 		this.usersService = usersService;
 	}
 
+	@RequestMapping("/")
+	public String index(HttpSession session) {
+		return "Hello";
+	}
+
 	@RequestMapping("/login/{username}")
 	public User login(@PathVariable String username, HttpSession session) {
 		session.setAttribute("username", username);
