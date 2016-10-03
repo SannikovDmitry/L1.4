@@ -25,7 +25,7 @@ public class GameController {
 
 	@RequestMapping("/")
 	public String index(HttpSession session) {
-		return "Hello";
+		return "AGRage Team - Backend Server";
 	}
 
 	@RequestMapping("/login/{username}")
